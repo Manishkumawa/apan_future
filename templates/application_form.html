@@ -1,0 +1,42 @@
+{% include 'favicon.html'%}
+<h4 style  ="text-align:center" > Application Form</h4>
+<form action ="/job/{{job.id}}/apply" method ="post" >
+    <div class ="mb-2">
+    <label> Full Name:</label><br>
+    <input type ="text" name ="full_name" placeholder ="Manish Kumawat" required>
+    <div>
+    
+    <div class ="mb-2">
+    <label> Email :</label><br>
+    <input type ="email" name ="email" placeholder ="manish@gmail.com" required>
+    </div>
+
+    <div class ="mb-2">
+    <label> LinkedIn URL:</label><br>
+    <input type ="url" name ="linkedIn_url" placeholder ="https://linkdin/" required><br>
+    </div>
+
+    
+    
+    <div class ="mb-2">
+        <label>Education </label><br>
+        <textarea name ="education"></textarea>
+
+
+    </div>
+    <div class ="mb-2">
+        <label>Work </label><br>
+        <textarea name ="work_experience"></textarea>
+        
+
+    </div>
+    <div class ="mb-2">
+        <label>Resume URL </label><br>
+        <input type ="url" name ="resume_url" required>
+        
+        
+
+    </div>
+    <input type ="submit" value ="submit">
+
+</form>
